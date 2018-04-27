@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CategoriesX_Example' do
+  pod 'CategoriesX', :path => '../'
+
+  target 'CategoriesX_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
