@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CategoriesX'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of CategoriesX.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/G-Xi0N/CategoriesX'
+  s.homepage         = 'https://github.com/Ginxx/CategoriesX'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'G-Xi0N' => 'gao497868860@163.com' }
-  s.source           = { :git => 'https://github.com/G-Xi0N/CategoriesX.git', :tag => s.version.to_s }
+  s.author           = { 'gaoX' => 'gao497868860@163.com' }
+  s.source           = { :git => 'https://github.com/Ginxx/CategoriesX.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

@@ -1,0 +1,27 @@
+PODS:
+  - CategoriesX (0.1.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - CategoriesX (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  CategoriesX:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CategoriesX: 4abb4fbef3691356fcc7499566fe49392c8fb46f
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 3c3b98a505b7d43c07c1d7baf127ce4bb8b9b76c
+
+COCOAPODS: 1.5.0

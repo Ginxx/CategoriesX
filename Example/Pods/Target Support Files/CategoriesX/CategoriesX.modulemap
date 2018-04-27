@@ -1,0 +1,6 @@
+framework module CategoriesX {
+  umbrella header "CategoriesX-umbrella.h"
+
+  export *
+  module * { export * }
+}
