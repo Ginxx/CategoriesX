@@ -10,8 +10,8 @@
 
 @interface UIColor (Category)
 
-+ (UIColor *)colorWithHex:(NSString *)hexString;
++ (UIColor *(^)(NSString *hexString))hex;
 
-- (UIColor *(^)(CGFloat alpha))alpha;
+@property (nonatomic, copy, readonly) UIColor *(^alpha)(CGFloat alpha);
 
 @end
