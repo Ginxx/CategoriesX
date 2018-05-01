@@ -12,6 +12,6 @@
 
 + (UIColor *)colorWithHex:(NSString *)hexString;
 
-- (UIColor *)alpha:(CGFloat)alpha;
+- (UIColor *(^)(CGFloat alpha))alpha;
 
 @end
