@@ -10,6 +10,26 @@
 
 @implementation UIBarButtonItem (Category)
 
+- (UIBarButtonItem *(^)(UIFont *, UIControlState))setFont
+{
+    return ^(UIFont *font, UIControlState state) {
+        NSMutableDictionary *attrs = [self titleTextAttributesForState:state].mutableCopy ?: @{}.mutableCopy;
+        [attrs setObject:font forKey:NSFontAttributeName];
+        [self setTitleTextAttributes:attrs forState:state];
+        return self;
+    };
+}
+
+- (UIBarButtonItem *(^)(UIColor *, UIControlState))setTextColor
+{
+    return ^(UIColor *color, UIControlState state) {
+        NSMutableDictionary *attrs = [self titleTextAttributesForState:state].mutableCopy ?: @{}.mutableCopy;
+        [attrs setObject:color forKey:NSForegroundColorAttributeName];
+        [self setTitleTextAttributes:attrs forState:state];
+        return self;
+    };
+}
+
 + (instancetype)itemWithImageName:(NSString *)imageName target:(id)target action:(SEL)action
 {
     UIImage *originalImage = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
